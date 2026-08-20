@@ -19,8 +19,14 @@ public:
         int n1 = arr1.size() ;
         int n2 = arr2.size() ;
         vector<int>result ;
-        for(int x : arr1) result.push_back(x);
-        for(int x : arr2) result.push_back(x) ;
+        for(int i = 0 ; i < n1 ; i++)
+        {
+            result.push_back(arr1[i]) ;
+        }
+        for(int i = 0 ; i <n2 ; i++)
+        {
+            result.push_back(arr2[i]) ;
+        }
         return result ;
     }
 };
