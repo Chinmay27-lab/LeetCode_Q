@@ -18,14 +18,14 @@ public:
         }
         int n1 = arr1.size() ;
         int n2 = arr2.size() ;
-        vector<int>result ;
+        vector<int>result(n) ;
         for(int i = 0 ; i < n1 ; i++)
         {
-            result.push_back(arr1[i]) ;
+            result[i] = arr1[i] ;
         }
-        for(int i = 0 ; i <n2 ; i++)
+        for(int i = 0 ; i < n2 ; i++)
         {
-            result.push_back(arr2[i]) ;
+            result[n1+i] = arr2[i] ;
         }
         return result ;
     }
