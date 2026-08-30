@@ -1,5 +1,24 @@
 class Solution {
 public:
+    bool canAliceWin(vector<int>& nums) {
+        int s = 0 ;
+        int d = 0 ;
+        for(int x : nums)
+        {
+            if(x <=9) s+=x ;
+            else d+=x ;
+        }
+        return s!=d ;
+    }
+};
+
+
+
+
+
+/*
+class Solution {
+public:
     bool single(int ans)
     {
         int ct = 0 ;
@@ -25,3 +44,4 @@ public:
         else return true ;
     }
 };
+*/ 
