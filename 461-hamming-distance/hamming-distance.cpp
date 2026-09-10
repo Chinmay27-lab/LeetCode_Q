@@ -5,15 +5,8 @@ public:
         int ct = 0 ;
         while(num>0)
         {
-            if(num%2 == 1) 
-            {
-                ct ++ ;
-                num /= 2 ;
-            }
-            else 
-            {
-                num /= 2 ;
-            }
+            if(num%2 == 1) ct ++ ;
+            num /= 2 ;
         }
         return ct ;
     }
